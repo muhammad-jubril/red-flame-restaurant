@@ -7,7 +7,9 @@
 <meta name="description" content="Red Flame Restaurant in Kano, Nigeria — flame-grilled burgers, wood-fired pizza, handmade pasta and charcoal steaks.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://upload.wikimedia.org">
+<link rel="preload" as="image" href="https://commons.wikimedia.org/wiki/Special:FilePath/Grilling.jpg?width=1600" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,23 +18,23 @@
 
 <header id="site-header">
 <nav class="wrap">
-<a href="#home" class="logo"><span class="logo-mark">&#9679;</span>Red Flame</a>
+<a href="index.html" class="logo"><span class="logo-mark">&#9679;</span>Red Flame</a>
 <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
 <span></span><span></span><span></span>
 </button>
 <ul id="navLinks">
-<li><a href="#home">Home</a></li>
-<li><a href="#menu">Menu</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#reviews">Reviews</a></li>
-<li><a href="#contact">Contact</a></li>
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="reviews.html">Reviews</a></li>
+<li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
 </header>
 
 <section class="hero" id="home">
 <div class="hero-media">
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Grilling.jpg" alt="Steak searing over an open flame grill" loading="eager">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Grilling.jpg?width=1600" width="1600" height="900" alt="Steak searing over an open flame grill" loading="eager" fetchpriority="high" decoding="async">
 <div class="hero-scrim"></div>
 </div>
 <div class="hero-content">
@@ -40,120 +42,94 @@
 <h1>Everything worth<br>eating <span>touches fire.</span></h1>
 <p class="hero-sub">Burgers charred on the grate, pizza blistered in a wood oven, pasta finished in the pan. No shortcuts, no microwave — just fire, fat and patience.</p>
 <div class="hero-actions">
-<a href="#menu" class="btn btn-primary">See the Menu</a>
-<a href="#contact" class="btn btn-ghost">Book a Table</a>
+<a href="menu.html" class="btn btn-primary">See the Menu</a>
+<a href="contact.html" class="btn btn-ghost">Book a Table</a>
 </div>
 </div>
 <div class="char-edge" aria-hidden="true"></div>
 </section>
 
-<section class="about" id="about">
-<div class="wrap about-grid">
-<div class="about-image">
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/A%20skilled%20chef%20in%20gloves%20focuses%20on%20cooking%20at%20an%20outdoor%20gathering%2C%20surrounded%20by%20fresh%20ingredients%20and%20kitchen%20tools.jpg" alt="Chef plating a dish fresh off the grill" loading="lazy">
+<section class="teaser">
+<div class="wrap">
+<p class="eyebrow center">Why Red Flame</p>
+<h2 class="center">A small menu, done properly</h2>
+<div class="teaser-grid">
+<div class="teaser-card">
+<h3>Real charcoal, every plate</h3>
+<p>No shortcuts. Every burger, steak and slice passes over open flame before it reaches your table.</p>
 </div>
-<div class="about-text">
-<p class="eyebrow">Our story</p>
-<h2>Cooked over real fire, every single plate.</h2>
-<p>Red Flame started with one charcoal grill and a simple rule: if it can't stand up to real heat, it doesn't go on the menu. Today that same grill still anchors the kitchen — every burger, steak and slice passes over open flame before it reaches your table.</p>
-<p>We keep the ingredient list short and the sourcing local: fresh vegetables from Kano's markets, meat butchered daily, dough proofed in-house. It's a small menu, done properly.</p>
-<div class="about-stats">
-<div><strong>100%</strong><span>Charcoal-fired</span></div>
-<div><strong>Daily</strong><span>Fresh dough &amp; cuts</span></div>
-<div><strong>Est.</strong><span>Kano favourite</span></div>
+<div class="teaser-card">
+<h3>Sourced daily</h3>
+<p>Fresh vegetables from Kano's markets, meat butchered daily, dough proofed in-house.</p>
+</div>
+<div class="teaser-card">
+<h3>A Kano favourite</h3>
+<p>From burgers to charcoal steak, Red Flame has become the city's go-to for fire-cooked food.</p>
 </div>
 </div>
 </div>
 </section>
 
-<section id="menu" class="menu">
+<section class="menu-teaser">
 <div class="wrap">
-<p class="eyebrow center">The best sellers</p>
+<p class="eyebrow center">Best sellers</p>
 <h2 class="center">Straight off the grill</h2>
-<div class="cards">
+<div class="cards cards-compact">
 
 <article class="card">
-<div class="card-media"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Gourmet%20Burger%20Kitchen%20hamburger.jpg" alt="Classic flame-grilled burger with melted cheese" loading="lazy"></div>
+<div class="card-media"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Gourmet%20Burger%20Kitchen%20hamburger.jpg?width=600" width="600" height="450" alt="Classic flame-grilled burger with melted cheese" loading="lazy" decoding="async"></div>
 <div class="card-body">
 <div class="card-top"><h3>Classic Flame Burger</h3><span class="price">&#8358;4,500</span></div>
-<p>Char-grilled beef patty, aged cheddar, caramelised onions and house sauce, stacked in a toasted brioche bun.</p>
+<p>Char-grilled beef patty, aged cheddar and caramelised onions on a toasted brioche bun.</p>
 </div>
 </article>
 
 <article class="card">
-<div class="card-media"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pepperoni%20pizza.jpg" alt="Pepperoni pizza fresh from the wood-fired oven" loading="lazy"></div>
+<div class="card-media"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pepperoni%20pizza.jpg?width=600" width="600" height="450" alt="Pepperoni pizza fresh from the wood-fired oven" loading="lazy" decoding="async"></div>
 <div class="card-body">
 <div class="card-top"><h3>Pepperoni Inferno Pizza</h3><span class="price">&#8358;6,000</span></div>
-<p>Hand-stretched dough, slow-simmered tomato sauce, mozzarella and double pepperoni, blistered in a wood-fired oven.</p>
+<p>Hand-stretched dough, slow-simmered tomato sauce and double pepperoni, wood-fired.</p>
 </div>
 </article>
 
 <article class="card">
-<div class="card-media"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pasta.jpg" alt="Italian pasta dish with fresh herbs" loading="lazy"></div>
-<div class="card-body">
-<div class="card-top"><h3>Smoky Italian Pasta</h3><span class="price">&#8358;4,200</span></div>
-<p>Pasta tossed with a smoke-kissed tomato and herb sauce, finished with shaved parmesan and fresh basil.</p>
-</div>
-</article>
-
-<article class="card">
-<div class="card-media"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Steak.jpg" alt="Grilled steak cooked over charcoal" loading="lazy"></div>
+<div class="card-media"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Steak.jpg?width=600" width="600" height="450" alt="Grilled steak cooked over charcoal" loading="lazy" decoding="async"></div>
 <div class="card-body">
 <div class="card-top"><h3>Charcoal Grilled Steak</h3><span class="price">&#8358;7,000</span></div>
-<p>Prime cut seared over live charcoal, rested and sliced, served with roasted vegetables and a red-wine jus.</p>
+<p>Prime cut seared over live charcoal, rested and sliced, with roasted vegetables.</p>
 </div>
 </article>
 
 </div>
-</div>
-</section>
-
-<section class="reviews" id="reviews">
-<div class="wrap">
-<p class="eyebrow center">What Kano is saying</p>
-<div class="review-grid">
-<blockquote>
-<p>&ldquo;Amazing food and great service — the steak alone is worth the trip.&rdquo;</p>
-<cite>Regular guest</cite>
-</blockquote>
-<blockquote>
-<p>&ldquo;The pizza has that proper wood-fired char. Best in the city.&rdquo;</p>
-<cite>Local diner</cite>
-</blockquote>
-<blockquote>
-<p>&ldquo;Went for the burger, stayed for the pasta. Everything tastes fresh.&rdquo;</p>
-<cite>Weekend visitor</cite>
-</blockquote>
-</div>
-</div>
-</section>
-
-<section id="contact" class="contact">
-<div class="wrap contact-grid">
-<div>
-<p class="eyebrow">Visit us</p>
-<h2>Come sit by the fire.</h2>
-<ul class="contact-list">
-<li><span>Address</span>Kano, Nigeria</li>
-<li><span>Phone</span><a href="tel:+2349167875697">+234 916 787 5697</a></li>
-<li><span>Email</span><a href="mailto:muhammadjubril9000@gmail.com">muhammadjubril9000@gmail.com</a></li>
-<li><span>Hours</span>Every day &middot; 11:00 &ndash; 22:00</li>
-</ul>
-</div>
-<div class="contact-cta">
-<a href="tel:+2349167875697" class="btn btn-primary">Call to Book</a>
-<a href="mailto:muhammadjubril9000@gmail.com" class="btn btn-ghost">Email Us</a>
-</div>
+<p class="center more-link"><a href="menu.html" class="btn btn-ghost">View Full Menu</a></p>
 </div>
 </section>
 
 <footer>
 <div class="wrap footer-grid">
+<div class="footer-brand">
 <span class="logo"><span class="logo-mark">&#9679;</span>Red Flame</span>
-<p>&copy; 2026 Red Flame Restaurant, Kano. All rights reserved.</p>
+<p>Flame-grilled kitchen &middot; Kano, Nigeria</p>
 </div>
+<ul class="footer-links">
+<li><a href="menu.html">Menu</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="reviews.html">Reviews</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<div class="footer-social">
+<a href="https://wa.me/2348087090973" class="social-icon" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+<svg viewBox="0 0 32 32" width="20" height="20" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.22.6 4.3 1.63 6.1L4 29l8.06-1.6a12.9 12.9 0 0 0 3.96.62c6.62 0 12.02-5.4 12.02-12.02C28.04 8.4 22.65 3 16.02 3zm0 21.8c-1.37 0-2.7-.33-3.9-.96l-.28-.15-4.65.92.94-4.6-.18-.3a9.7 9.7 0 0 1-1.5-5.17c0-5.4 4.4-9.8 9.8-9.8 2.62 0 5.08 1.02 6.93 2.87a9.72 9.72 0 0 1 2.87 6.93c-.02 5.4-4.42 9.8-9.83 9.8zm5.4-7.32c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15s-.77.97-.94 1.17-.35.22-.65.07a8.03 8.03 0 0 1-2.36-1.46 8.8 8.8 0 0 1-1.63-2.03c-.17-.3 0-.46.13-.6.13-.14.3-.35.44-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.9-2.2-.24-.57-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.47 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.09 4.5.71.3 1.27.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.4.25-.7.25-1.3.17-1.4-.07-.13-.27-.2-.57-.35z"/></svg>
+</a>
+</div>
+</div>
+<p class="copyright">&copy; 2026 Red Flame Restaurant, Kano. All rights reserved.</p>
 </footer>
 
-<script src="script.js"></script>
+<a href="https://wa.me/2348087090973?text=Hi%2C%20I%27d%20like%20to%20make%20a%20reservation" class="whatsapp-fab" aria-label="Chat with us on WhatsApp" target="_blank" rel="noopener">
+<svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.22.6 4.3 1.63 6.1L4 29l8.06-1.6a12.9 12.9 0 0 0 3.96.62c6.62 0 12.02-5.4 12.02-12.02C28.04 8.4 22.65 3 16.02 3zm0 21.8c-1.37 0-2.7-.33-3.9-.96l-.28-.15-4.65.92.94-4.6-.18-.3a9.7 9.7 0 0 1-1.5-5.17c0-5.4 4.4-9.8 9.8-9.8 2.62 0 5.08 1.02 6.93 2.87a9.72 9.72 0 0 1 2.87 6.93c-.02 5.4-4.42 9.8-9.83 9.8zm5.4-7.32c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15s-.77.97-.94 1.17-.35.22-.65.07a8.03 8.03 0 0 1-2.36-1.46 8.8 8.8 0 0 1-1.63-2.03c-.17-.3 0-.46.13-.6.13-.14.3-.35.44-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.9-2.2-.24-.57-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.47 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.09 4.5.71.3 1.27.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.4.25-.7.25-1.3.17-1.4-.07-.13-.27-.2-.57-.35z"/></svg>
+</a>
+
+<script src="script.js" defer></script>
 </body>
 </html>
