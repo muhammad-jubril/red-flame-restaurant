@@ -81,6 +81,8 @@ h2.center{text-align:center;margin-bottom:44px;}
   transition:width .25s ease;
 }
 #navLinks a:hover::after{width:100%;}
+#navLinks a.active{color:var(--ember-2);}
+#navLinks a.active::after{width:100%;}
 .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px;}
 .nav-toggle span{width:24px;height:2px;background:var(--cream);}
 
@@ -168,10 +170,88 @@ h2.center{text-align:center;margin-bottom:44px;}
 .contact-list a:hover{color:var(--ember-2);}
 .contact-cta{display:flex;flex-direction:column;gap:14px;}
 
+/* ============ Page banner (inner pages) ============ */
+.page-banner{
+  padding:160px 24px 70px;text-align:center;max-width:720px;margin:0 auto;
+  background:radial-gradient(ellipse at top, rgba(255,90,31,.08), transparent 60%);
+}
+.page-banner .eyebrow{display:block;}
+.page-banner h1{font-size:clamp(2.6rem,6vw,4rem);margin-bottom:16px;}
+.page-banner-sub{color:var(--cream-dim);}
+
+/* ============ Teaser grid (home + about values) ============ */
+.teaser, .values{padding:90px 0;}
+.values{background:var(--char-2);}
+.teaser-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px;}
+.teaser-card{
+  background:var(--ash);border:1px solid rgba(255,255,255,.05);border-radius:3px;
+  padding:28px 24px;
+}
+.teaser-card h3{font-family:var(--body);font-weight:600;font-size:1.05rem;margin-bottom:10px;color:var(--ember-2);}
+.teaser-card p{color:var(--cream-dim);font-size:.92rem;}
+
+.menu-teaser{padding:0 0 100px;}
+.cards-compact{margin-bottom:0;}
+.more-link{margin-top:44px;}
+
+/* ============ Full menu page ============ */
+.menu-full{padding:20px 0 110px;}
+.menu-category{margin-bottom:64px;}
+.menu-category h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:28px;}
+.text-menu{list-style:none;max-width:640px;}
+.text-menu li{
+  display:flex;justify-content:space-between;gap:16px;padding:14px 0;
+  border-bottom:1px dashed rgba(255,255,255,.12);font-size:1.02rem;
+}
+.text-menu li span{color:var(--cream);}
+.text-menu li em{font-style:normal;color:var(--gold);font-family:var(--display);letter-spacing:.02em;white-space:nowrap;}
+.menu-note{color:var(--cream-dim);font-size:.85rem;margin-top:20px;}
+
+/* ============ Reviews extras ============ */
+.reviews-full{padding-top:20px;}
+.stars{font-style:normal !important;color:var(--gold);letter-spacing:.15em;font-size:.9rem !important;margin-bottom:10px !important;}
+
+/* ============ Contact extras ============ */
+.contact-page{padding-top:20px;}
+.phone-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.whatsapp-inline{
+  display:inline-flex;align-items:center;gap:6px;color:#25D366;font-weight:600;font-size:.85rem;
+  border:1px solid rgba(37,211,102,.35);border-radius:20px;padding:5px 12px 5px 8px;
+  transition:background .2s ease, transform .2s ease;
+}
+.whatsapp-inline:hover{background:rgba(37,211,102,.12);transform:translateY(-1px);}
+.contact-map iframe{border-radius:3px;filter:grayscale(.3) invert(.92) contrast(.9);}
+.contact-map{flex:1 1 320px;max-width:480px;}
+
+/* ============ Floating WhatsApp button ============ */
+.whatsapp-fab{
+  position:fixed;right:22px;bottom:22px;z-index:30;
+  width:56px;height:56px;border-radius:50%;
+  background:#25D366;color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 24px -6px rgba(0,0,0,.5);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.whatsapp-fab:hover{transform:scale(1.08);box-shadow:0 14px 30px -6px rgba(0,0,0,.6);}
+
 /* ============ Footer ============ */
-footer{border-top:1px solid rgba(255,255,255,.08);padding:36px 0;}
-.footer-grid{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
-footer p{color:var(--cream-dim);font-size:.85rem;}
+footer{border-top:1px solid rgba(255,255,255,.08);padding:48px 0 28px;}
+.footer-grid{
+  display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:28px;
+  padding-bottom:24px;
+}
+.footer-brand p{color:var(--cream-dim);font-size:.85rem;margin-top:8px;}
+.footer-links{list-style:none;display:flex;gap:22px;flex-wrap:wrap;}
+.footer-links a{font-size:.85rem;color:var(--cream-dim);}
+.footer-links a:hover{color:var(--ember-2);}
+.footer-social{display:flex;gap:12px;}
+.social-icon{
+  width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:var(--ash);color:var(--cream-dim);border:1px solid rgba(255,255,255,.08);
+  transition:color .2s ease, border-color .2s ease;
+}
+.social-icon:hover{color:#25D366;border-color:#25D366;}
+.copyright{color:var(--cream-dim);font-size:.8rem;border-top:1px solid rgba(255,255,255,.06);padding-top:20px;}
 
 /* ============ Responsive ============ */
 @media(max-width:860px){
@@ -189,6 +269,9 @@ footer p{color:var(--cream-dim);font-size:.85rem;}
   .nav-toggle{display:flex;}
   .hero-content{padding:140px 24px 100px;}
   .contact-grid{flex-direction:column;align-items:flex-start;}
+  .page-banner{padding:130px 24px 56px;}
+  .whatsapp-fab{right:16px;bottom:16px;width:50px;height:50px;}
+  .contact-map{max-width:100%;}
 }
 
 @media(prefers-reduced-motion:reduce){
