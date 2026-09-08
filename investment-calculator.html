@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investment Calculator — CrestPoint Realty</title>
+<meta name="description" content="Estimate the cost of a land or plot investment across CrestPoint's active estates in Lagos and Abuja.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#0b0b0c">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CrestPoint Realty">
+<meta property="og:title" content="Investment Calculator — CrestPoint Realty">
+<meta property="og:description" content="Estimate the cost of a land or plot investment across CrestPoint's active estates in Lagos and Abuja.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1635111057505-3b7dcc2b72fb?auto=format&fit=crop&w=1600&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link rel="dns-prefetch" href="https://images.unsplash.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="grain"></div>
+<header id="site-header">
+<div class="wrap">
+<a href="index.html" class="logo-group">
+<span class="logo"><span class="mark"></span>CrestPoint</span>
+<span class="logo-sub">Realty &middot; Lagos &amp; Abuja</span>
+</a>
+<nav>
+<ul id="navLinks">
+<li><a href="index.html" class="">Home</a></li>
+<li><a href="properties.html" class="">Properties</a></li>
+<li><a href="services.html" class="">Services</a></li>
+<li><a href="about.html" class="">About</a></li>
+<li><a href="contact.html" class="">Contact</a></li>
+<li class="has-dropdown" id="resDropdown">
+<a href="#" class="active" id="resToggle">Resources</a>
+<div class="dropdown-panel">
+<a href="investment-calculator.html">Investment Calculator</a>
+<a href="testimonials.html">Testimonials</a>
+<a href="news.html">News</a>
+<a href="careers.html">Careers</a>
+<a href="partners.html">Partners</a>
+<a href="faq.html">FAQ</a>
+</div>
+</li>
+<li class="nav-cta"><a href="https://wa.me/2348093147720?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20property" class="btn btn-gold" target="_blank" rel="noopener">Enquire Now</a></li>
+</ul>
+</nav>
+<button id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</div>
+</header>
+<main>
+<section class="page-hero">
+<div class="hero-grid-overlay"></div>
+<div class="page-banner">
+<div class="eyebrow center on-dark"><span class="mark"></span>PLAN YOUR INVESTMENT</div>
+<h1>Investment Calculator</h1>
+<p>A quick estimate of what a land or plot investment costs today. For a real projection, talk to an agent.</p>
+</div>
+</section>
+
+<section class="tight">
+<div class="wrap">
+<div class="calc-panel reveal">
+<div>
+<div class="eyebrow on-dark"><span class="mark"></span>ESTIMATE YOUR TOTAL</div>
+<h2 style="color:var(--paper);margin:16px 0 30px;">Enter your numbers.</h2>
+<div class="calc-field">
+<label>Number of Plots</label>
+<input type="number" id="calcPlots" value="1" min="1" max="50">
+</div>
+<div class="calc-field">
+<label>Price per Plot (&#8358;)</label>
+<input type="number" id="calcPrice" value="18000000" min="0" step="500000">
+</div>
+<div class="calc-field">
+<label>Estate</label>
+<select id="calcEstate">
+<option value="18000000">Meridian Gardens, Sangotedo &mdash; &#8358;18,000,000/plot</option>
+<option value="32000000">Epe Waterside Estate &mdash; &#8358;32,000,000/plot</option>
+<option value="65000000">Guzape Prime Plots, Abuja &mdash; &#8358;65,000,000/plot</option>
+<option value="custom">Custom price</option>
+</select>
+</div>
+</div>
+<div class="calc-result">
+<div class="label">Estimated Total</div>
+<div class="amount" id="calcTotal">&#8358;18,000,000</div>
+<p class="note">This is an indicative estimate only and excludes legal fees, agency commission, and documentation charges. A CrestPoint agent will confirm the exact figure.</p>
+<a href="https://wa.me/2348093147720?text=Hi%2C%20I%27d%20like%20a%20formal%20quote%20for%20a%20land%20investment" class="btn btn-gold" style="margin-top:26px;" target="_blank" rel="noopener">Get a Formal Quote</a>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<div class="section-head reveal">
+<div class="eyebrow center"><span class="mark"></span>WHY LAND</div>
+<h2>The case for buying now.</h2>
+</div>
+<div class="feature-grid reveal stagger-in">
+<div class="feature-card">
+<h3>Appreciation Outpaces Inflation</h3>
+<p>Land in growth corridors like Sangotedo and Epe has historically appreciated 20&ndash;35% annually as infrastructure lands.</p>
+</div>
+<div class="feature-card">
+<h3>Low Entry, High Ceiling</h3>
+<p>Plots start below &#8358;20M &mdash; a fraction of a built property &mdash; with no ceiling on long-term upside.</p>
+</div>
+<div class="feature-card">
+<h3>Flexible Payment Plans</h3>
+<p>Most estates offer 6&ndash;12 month instalment plans, with title transferred on final payment.</p>
+</div>
+</div>
+</div>
+</section>
+</main><footer>
+<div class="wrap">
+<div class="footer-grid">
+<div class="footer-brand">
+<span class="logo"><span class="mark"></span>CrestPoint</span>
+<p>Nigeria's address for exceptional living. Lagos &middot; Abuja.</p>
+<div class="footer-social">
+<a href="https://wa.me/2348093147720" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener">
+<svg viewBox="0 0 32 32" width="18" height="18" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.22.6 4.3 1.63 6.1L4 29l8.06-1.6a12.9 12.9 0 0 0 3.96.62c6.62 0 12.02-5.4 12.02-12.02C28.04 8.4 22.65 3 16.02 3zm0 21.8c-1.37 0-2.7-.33-3.9-.96l-.28-.15-4.65.92.94-4.6-.18-.3a9.7 9.7 0 0 1-1.5-5.17c0-5.4 4.4-9.8 9.8-9.8 2.62 0 5.08 1.02 6.93 2.87a9.72 9.72 0 0 1 2.87 6.93c-.02 5.4-4.42 9.8-9.83 9.8zm5.4-7.32c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15s-.77.97-.94 1.17-.35.22-.65.07a8.03 8.03 0 0 1-2.36-1.46 8.8 8.8 0 0 1-1.63-2.03c-.17-.3 0-.46.13-.6.13-.14.3-.35.44-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.9-2.2-.24-.57-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.47 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.09 4.5.71.3 1.27.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.4.25-.7.25-1.3.17-1.4-.07-.13-.27-.2-.57-.35z"/></svg>
+</a>
+<a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+<a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2 3.77-2 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3-.02-2.96-1.8-2.96-1.8 0-2.08 1.4-2.08 2.87V21H9z"/></svg></a>
+</div>
+</div>
+<div class="footer-col">
+<h4>Explore</h4>
+<a href="properties.html">Properties</a>
+<a href="services.html">Services</a>
+<a href="investment-calculator.html">Investment Calculator</a>
+<a href="news.html">News</a>
+</div>
+<div class="footer-col">
+<h4>Company</h4>
+<a href="about.html">About Us</a>
+<a href="careers.html">Careers</a>
+<a href="partners.html">Partners</a>
+<a href="faq.html">FAQ</a>
+</div>
+<div class="footer-col">
+<h4>Contact</h4>
+<a href="tel:+2349167875697">+234 916 787 5697</a>
+<a href="mailto:muhammadjubril9000@gmail.com">muhammadjubril9000@gmail.com</a>
+<a href="contact.html">Victoria Island, Lagos</a>
+</div>
+</div>
+<div class="footer-bottom">
+<span>&copy; 2026 CrestPoint Realty. All rights reserved.</span>
+<span>Lagos &middot; Abuja, Nigeria</span>
+</div>
+</div>
+</footer>
+
+<a href="https://wa.me/234 916 789 5697?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20property" class="whatsapp-fab" aria-label="Chat on WhatsApp" target="_blank" rel="noopener"><span class="fab-tip">Chat with us</span>
+<svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.22.6 4.3 1.63 6.1L4 29l8.06-1.6a12.9 12.9 0 0 0 3.96.62c6.62 0 12.02-5.4 12.02-12.02C28.04 8.4 22.65 3 16.02 3zm0 21.8c-1.37 0-2.7-.33-3.9-.96l-.28-.15-4.65.92.94-4.6-.18-.3a9.7 9.7 0 0 1-1.5-5.17c0-5.4 4.4-9.8 9.8-9.8 2.62 0 5.08 1.02 6.93 2.87a9.72 9.72 0 0 1 2.87 6.93c-.02 5.4-4.42 9.8-9.83 9.8zm5.4-7.32c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15s-.77.97-.94 1.17-.35.22-.65.07a8.03 8.03 0 0 1-2.36-1.46 8.8 8.8 0 0 1-1.63-2.03c-.17-.3 0-.46.13-.6.13-.14.3-.35.44-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.9-2.2-.24-.57-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.47 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.09 4.5.71.3 1.27.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.4.25-.7.25-1.3.17-1.4-.07-.13-.27-.2-.57-.35z"/></svg>
+</a>
+<script src="script.js" defer></script>
+</body>
+</html>
