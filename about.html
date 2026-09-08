@@ -3,242 +3,114 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us — CrestPoint Realty</title>
-<meta name="description" content="Fourteen years, two offices, and 500+ properties sold. The story, leadership, and team behind CrestPoint Realty.">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<meta name="theme-color" content="#0b0b0c">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="CrestPoint Realty">
-<meta property="og:title" content="About Us — CrestPoint Realty">
-<meta property="og:description" content="Fourteen years, two offices, and 500+ properties sold. The story, leadership, and team behind CrestPoint Realty.">
-<meta property="og:image" content="https://images.unsplash.com/photo-1748290880596-2a2c80530bc0?auto=format&fit=crop&w=800&q=80">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-<link rel="dns-prefetch" href="https://images.unsplash.com">
+<title>About — Red Flame</title>
+<meta name="description" content="Red Flame — flame-grilled kitchen in Kano, Nigeria.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link rel="dns-prefetch" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600;1,9..144,700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <div class="grain"></div>
+
 <header id="site-header">
-<div class="wrap">
-<a href="index.html" class="logo-group">
-<span class="logo"><span class="mark"></span>CrestPoint</span>
-<span class="logo-sub">Realty &middot; Lagos &amp; Abuja</span>
-</a>
-<nav>
+<nav class="wrap">
+<a href="index.html" class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 2.8-1.3 4.5-2.8 6.4C7.6 10.6 6.2 12.6 6.2 15a5.8 5.8 0 0 0 11.6 0c0-1.9-.9-3.4-1.8-4.7.2 1.4-.4 2.3-1 2.8-.2-1.9-1.4-2.9-1.9-5.1-.3 1.4-1.4 1.9-1.9 3.3C10.6 8.9 12 5.3 12 2z"/></svg></span>Red Flame</a>
+<button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
 <ul id="navLinks">
-<li><a href="index.html" class="">Home</a></li>
-<li><a href="properties.html" class="">Properties</a></li>
-<li><a href="services.html" class="">Services</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
 <li><a href="about.html" class="active">About</a></li>
-<li><a href="contact.html" class="">Contact</a></li>
-<li class="has-dropdown" id="resDropdown">
-<a href="#" class="" id="resToggle">Resources</a>
-<div class="dropdown-panel">
-<a href="investment-calculator.html">Investment Calculator</a>
-<a href="testimonials.html">Testimonials</a>
-<a href="news.html">News</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
-<a href="faq.html">FAQ</a>
-</div>
-</li>
-<li class="nav-cta"><a href="https://wa.me/2348093147720?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20property" class="btn btn-gold" target="_blank" rel="noopener">Enquire Now</a></li>
+<li><a href="reviews.html">Reviews</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li class="nav-cta"><a href="https://wa.me/2348087090973?text=Hi%2C%20I%27d%20like%20to%20make%20a%20reservation" class="btn btn-primary" target="_blank" rel="noopener">Book a Table</a></li>
 </ul>
 </nav>
-<button id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-</div>
 </header>
-<main>
-<section class="page-hero">
-<div class="hero-grid-overlay"></div>
-<div class="page-banner">
-<div class="eyebrow center on-dark"><span class="mark"></span>OUR STORY</div>
-<h1>About CrestPoint</h1>
-<p>Fourteen years of putting the paperwork before the photographs.</p>
-</div>
+
+<section class="page-banner">
+<p class="eyebrow">Our story</p>
+<h1>About <em class="flame-text">Red Flame</em></h1>
+<p class="page-banner-sub">Cooked over real fire, every single plate.</p>
 </section>
 
-<section>
-<div class="wrap">
-<div class="pd-layout reveal">
-<div>
-<div class="eyebrow"><span class="mark"></span>HOW WE STARTED</div>
-<h2 style="margin:16px 0 20px;">Built on one bad transaction.</h2>
-<p style="color:var(--graphite);margin-bottom:18px;">CrestPoint was founded in 2012 after our founder watched a family friend lose a deposit on a Lekki plot that turned out to have three separate claims of ownership. The agency that sold it had never checked. CrestPoint was built to be the agency that always does.</p>
-<p style="color:var(--graphite);">Today we operate from two offices &mdash; Victoria Island and Abuja &mdash; with forty agents and a legal team that reviews every title before it reaches a listing page. We've sold over 500 properties. We have never once skipped the search.</p>
+<section class="about">
+<div class="wrap about-grid">
+<div class="about-image reveal">
+<img class="fx-photo" src="https://images.unsplash.com/photo-1627947063935-55577ec3c2e1?auto=format&fit=crop&w=1000&q=80" width="1000" height="1250" alt="Cook tending a live charcoal grill fire" loading="lazy" decoding="async">
 </div>
-<div>
-<img src="https://images.unsplash.com/photo-1573164574511-73c773193279?auto=format&fit=crop&w=1600&q=80" alt="CrestPoint Realty office interior">
-</div>
-</div>
-</div>
-</section>
-
-<section class="on-dark">
-<div class="wrap">
-<div class="pd-layout reveal" style="align-items:center;">
-<div style="order:2;">
-<img src="https://images.unsplash.com/photo-1748290880596-2a2c80530bc0?auto=format&fit=crop&w=800&q=80" alt="Ifeoma Adeyemi, Founder and CEO of CrestPoint Realty">
-</div>
-<div style="order:1;">
-<div class="eyebrow on-dark"><span class="mark"></span>A NOTE FROM OUR FOUNDER</div>
-<p style="font-family:var(--display);font-style:italic;font-size:1.4rem;color:var(--paper);line-height:1.5;margin:20px 0 26px;">"We are not the fastest agency in Lagos, and we've stopped apologising for it. Every listing on this site has been through a title search a client will never see the cost of. That's the job."</p>
-<div style="font-weight:600;color:var(--paper);">Ifeoma Adeyemi</div>
-<div style="color:var(--gold-lt);font-family:var(--data);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;margin-top:4px;">Founder &amp; CEO</div>
+<div class="about-text reveal">
+<p class="eyebrow">How it started</p>
+<h2>One grill, <em class="flame-text">one rule.</em></h2>
+<p>Red Flame started with one charcoal grill and a simple rule: if it can't stand up to real heat, it doesn't go on the menu. Today that same grill still anchors the kitchen &mdash; every burger, steak and slice passes over open flame before it reaches your table.</p>
+<p>We keep the ingredient list short and the sourcing local: fresh vegetables from Kano's markets, meat butchered daily, dough proofed in-house. It's a small menu, done properly.</p>
+<div class="about-stats">
+<div><strong>100%</strong><span>Charcoal-fired</span></div>
+<div><strong>Daily</strong><span>Fresh dough &amp; cuts</span></div>
+<div><strong>Est.</strong><span>Kano favourite</span></div>
 </div>
 </div>
 </div>
 </section>
 
-<section>
-<div class="wrap">
-<div class="feature-grid reveal stagger-in" style="grid-template-columns:1fr 1fr;">
-<div class="feature-card">
-<h3>Our Vision</h3>
-<p>To be the name Nigerians trust first when land or property changes hands &mdash; not the cheapest option, the safest one.</p>
+<div class="marquee" aria-hidden="true">
+<div class="marquee-track"><span>Flame Grilled <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.27l-5.8 3.1 1.1-6.47-4.7-4.58 6.5-.94z"/></svg> Wood Fired <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.27l-5.8 3.1 1.1-6.47-4.7-4.58 6.5-.94z"/></svg> Charcoal Seared <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.27l-5.8 3.1 1.1-6.47-4.7-4.58 6.5-.94z"/></svg> Kano's Favourite <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.27l-5.8 3.1 1.1-6.47-4.7-4.58 6.5-.94z"/></svg> </span><span>Flame Grilled <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.27l-5.8 3.1 1.1-6.47-4.7-4.58 6.5-.94z"/></svg> Wood Fired <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.27l-5.8 3.1 1.1-6.47-4.7-4.58 6.5-.94z"/></svg> Charcoal Seared <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.27l-5.8 3.1 1.1-6.47-4.7-4.58 6.5-.94z"/></svg> Kano's Favourite <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.27l-5.8 3.1 1.1-6.47-4.7-4.58 6.5-.94z"/></svg> </span><span>Flame Grilled <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.27l-5.8 3.1 1.1-6.47-4.7-4.58 6.5-.94z"/></svg> Wood Fired <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.27l-5.8 3.1 1.1-6.47-4.7-4.58 6.5-.94z"/></svg> Charcoal Seared <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.27l-5.8 3.1 1.1-6.47-4.7-4.58 6.5-.94z"/></svg> Kano's Favourite <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.27l-5.8 3.1 1.1-6.47-4.7-4.58 6.5-.94z"/></svg> </span><span>Flame Grilled <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.27l-5.8 3.1 1.1-6.47-4.7-4.58 6.5-.94z"/></svg> Wood Fired <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.27l-5.8 3.1 1.1-6.47-4.7-4.58 6.5-.94z"/></svg> Charcoal Seared <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.27l-5.8 3.1 1.1-6.47-4.7-4.58 6.5-.94z"/></svg> Kano's Favourite <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.27l-5.8 3.1 1.1-6.47-4.7-4.58 6.5-.94z"/></svg> </span></div>
 </div>
-<div class="feature-card">
-<h3>Our Mission</h3>
-<p>Verify every title, disclose every fee, and stay on the file until the keys are actually in your hand.</p>
-</div>
-</div>
-</div>
-</section>
 
-<section class="on-dark">
+<section class="values">
 <div class="wrap">
 <div class="section-head reveal">
-<div class="eyebrow center on-dark"><span class="mark"></span>OUR TIMELINE</div>
-<h2 style="color:var(--paper);">Fourteen years, four milestones.</h2>
+<p class="eyebrow center">What we stand for</p>
+<h2>The Red Flame <em>way</em></h2>
 </div>
-<div class="timeline reveal">
-<div class="tl-item">
-<div class="tl-year">2012</div>
-<h3>CrestPoint founded in Victoria Island</h3>
-<p>Started as a three-person title-verification desk before taking on its first listings.</p>
+<div class="teaser-grid reveal stagger">
+<div class="teaser-card">
+<span class="num">01</span>
+<h3>Fire first</h3>
+<p>No microwaves, no shortcuts. Everything that leaves the kitchen has touched real charcoal or a wood-fired oven.</p>
 </div>
-<div class="tl-item">
-<div class="tl-year">2016</div>
-<h3>Property Management division launched</h3>
-<p>Began managing rental units for landlords tired of chasing tenants themselves.</p>
+<div class="teaser-card">
+<span class="num">02</span>
+<h3>Local sourcing</h3>
+<p>Vegetables from Kano's own markets and meat butchered daily &mdash; nothing sits in a freezer for weeks.</p>
 </div>
-<div class="tl-item">
-<div class="tl-year">2020</div>
-<h3>Abuja office opened</h3>
-<p>Expanded coverage to Maitama, Asokoro, and Guzape as demand grew outside Lagos.</p>
-</div>
-<div class="tl-item">
-<div class="tl-year">2025</div>
-<h3>500th property sold</h3>
-<p>Crossed &#8358;85 billion in facilitated transactions with a 98% client satisfaction rate.</p>
+<div class="teaser-card">
+<span class="num">03</span>
+<h3>Small menu, high standard</h3>
+<p>We would rather do a handful of dishes brilliantly than a long menu inconsistently.</p>
 </div>
 </div>
 </div>
 </section>
 
-<section>
-<div class="wrap">
-<div class="section-head reveal">
-<div class="eyebrow center"><span class="mark"></span>RECOGNITION</div>
-<h2>Awards &amp; Recognition</h2>
-</div>
-<div class="feature-grid reveal stagger-in" style="grid-template-columns:repeat(3,1fr);">
-<div class="feature-card center-text">
-<h3>Best Real Estate Agency</h3>
-<p>Lagos Property &amp; Homes Awards, 2024</p>
-</div>
-<div class="feature-card center-text">
-<h3>Excellence in Property Management</h3>
-<p>Nigeria Real Estate Recognition Awards, 2023</p>
-</div>
-<div class="feature-card center-text">
-<h3>Top 10 Agencies in Nigeria</h3>
-<p>The Guardian Property Report, 2022 &amp; 2025</p>
-</div>
-</div>
-</div>
-</section>
-
-<section class="tight">
-<div class="wrap">
-<div class="section-head reveal">
-<div class="eyebrow center"><span class="mark"></span>THE TEAM</div>
-<h2>Meet a few of our agents.</h2>
-</div>
-<div class="team-grid reveal stagger-in">
-<div class="team-card">
-<div class="photo"><img src="https://images.unsplash.com/photo-1748290880596-2a2c80530bc0?auto=format&fit=crop&w=800&q=80" alt="Ifeoma Adeyemi"></div>
-<h3>Ifeoma Adeyemi</h3>
-<div class="role">Founder &amp; CEO</div>
-</div>
-<div class="team-card">
-<div class="photo"><img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&h=400&q=80" alt="Chidi Okafor"></div>
-<h3>Chidi Okafor</h3>
-<div class="role">Senior Sales Agent</div>
-</div>
-<div class="team-card">
-<div class="photo"><img src="https://images.unsplash.com/photo-1495603889488-42d1d66e5523?auto=format&fit=crop&w=400&h=400&q=80" alt="Blessing Nwachukwu"></div>
-<h3>Blessing Nwachukwu</h3>
-<div class="role">Senior Sales Agent</div>
-</div>
-<div class="team-card">
-<div class="photo"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&h=400&q=80" alt="Yusuf Danladi"></div>
-<h3>Yusuf Danladi</h3>
-<div class="role">Luxury Portfolio Agent</div>
-</div>
-</div>
-<div class="center-text" style="margin-top:44px;"><a href="careers.html" class="btn btn-outline-dark">Join The Team</a></div>
-</div>
-</section>
-</main><footer>
-<div class="wrap">
-<div class="footer-grid">
+<footer>
+<div class="wrap footer-grid">
 <div class="footer-brand">
-<span class="logo"><span class="mark"></span>CrestPoint</span>
-<p>Nigeria's address for exceptional living. Lagos &middot; Abuja.</p>
+<span class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 2.8-1.3 4.5-2.8 6.4C7.6 10.6 6.2 12.6 6.2 15a5.8 5.8 0 0 0 11.6 0c0-1.9-.9-3.4-1.8-4.7.2 1.4-.4 2.3-1 2.8-.2-1.9-1.4-2.9-1.9-5.1-.3 1.4-1.4 1.9-1.9 3.3C10.6 8.9 12 5.3 12 2z"/></svg></span>Red Flame</span>
+<p>Flame-grilled kitchen &middot; Kano, Nigeria</p>
+</div>
+<ul class="footer-links">
+<li><a href="menu.html">Menu</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="reviews.html">Reviews</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
 <div class="footer-social">
-<a href="https://wa.me/2349167875697" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener">
-<svg viewBox="0 0 32 32" width="18" height="18" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.22.6 4.3 1.63 6.1L4 29l8.06-1.6a12.9 12.9 0 0 0 3.96.62c6.62 0 12.02-5.4 12.02-12.02C28.04 8.4 22.65 3 16.02 3zm0 21.8c-1.37 0-2.7-.33-3.9-.96l-.28-.15-4.65.92.94-4.6-.18-.3a9.7 9.7 0 0 1-1.5-5.17c0-5.4 4.4-9.8 9.8-9.8 2.62 0 5.08 1.02 6.93 2.87a9.72 9.72 0 0 1 2.87 6.93c-.02 5.4-4.42 9.8-9.83 9.8zm5.4-7.32c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15s-.77.97-.94 1.17-.35.22-.65.07a8.03 8.03 0 0 1-2.36-1.46 8.8 8.8 0 0 1-1.63-2.03c-.17-.3 0-.46.13-.6.13-.14.3-.35.44-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.9-2.2-.24-.57-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.47 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.09 4.5.71.3 1.27.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.4.25-.7.25-1.3.17-1.4-.07-.13-.27-.2-.57-.35z"/></svg>
-</a>
-<a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
-<a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2 3.77-2 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3-.02-2.96-1.8-2.96-1.8 0-2.08 1.4-2.08 2.87V21H9z"/></svg></a>
+<a href="https://wa.me/2348087090973" class="social-icon" aria-label="Chat on WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" width="20" height="20" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.22.6 4.3 1.63 6.1L4 29l8.06-1.6a12.9 12.9 0 0 0 3.96.62c6.62 0 12.02-5.4 12.02-12.02C28.04 8.4 22.65 3 16.02 3zm0 21.8c-1.37 0-2.7-.33-3.9-.96l-.28-.15-4.65.92.94-4.6-.18-.3a9.7 9.7 0 0 1-1.5-5.17c0-5.4 4.4-9.8 9.8-9.8 2.62 0 5.08 1.02 6.93 2.87a9.72 9.72 0 0 1 2.87 6.93c-.02 5.4-4.42 9.8-9.83 9.8zm5.4-7.32c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15s-.77.97-.94 1.17-.35.22-.65.07a8.03 8.03 0 0 1-2.36-1.46 8.8 8.8 0 0 1-1.63-2.03c-.17-.3 0-.46.13-.6.13-.14.3-.35.44-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.9-2.2-.24-.57-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.47 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.09 4.5.71.3 1.27.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.4.25-.7.25-1.3.17-1.4-.07-.13-.27-.2-.57-.35z"/></svg></a>
 </div>
 </div>
-<div class="footer-col">
-<h4>Explore</h4>
-<a href="properties.html">Properties</a>
-<a href="services.html">Services</a>
-<a href="investment-calculator.html">Investment Calculator</a>
-<a href="news.html">News</a>
-</div>
-<div class="footer-col">
-<h4>Company</h4>
-<a href="about.html">About Us</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
-<a href="faq.html">FAQ</a>
-</div>
-<div class="footer-col">
-<h4>Contact</h4>
-<a href="tel:+2349167875697">+234 916 787 5697</a>
-<a href="mailto:muhammadjubril9000@gmail.com">muhammadjubril9000@gmail.com</a>
-<a href="contact.html">Victoria Island, Lagos</a>
-</div>
-</div>
-<div class="footer-bottom">
-<span>&copy; 2026 CrestPoint Realty. All rights reserved.</span>
-<span>Lagos &middot; Abuja, Nigeria</span>
-</div>
-</div>
+<p class="copyright">&copy; 2026 Red Flame Restaurant, Kano. All rights reserved.</p>
 </footer>
 
-<a href="https://wa.me/2348093147720?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20property" class="whatsapp-fab" aria-label="Chat on WhatsApp" target="_blank" rel="noopener"><span class="fab-tip">Chat with us</span>
+<a href="https://wa.me/2348087090973?text=Hi%2C%20I%27d%20like%20to%20make%20a%20reservation" class="whatsapp-fab" aria-label="Chat with us on WhatsApp" target="_blank" rel="noopener">
+<span class="fab-tip">Chat with us</span>
 <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.22.6 4.3 1.63 6.1L4 29l8.06-1.6a12.9 12.9 0 0 0 3.96.62c6.62 0 12.02-5.4 12.02-12.02C28.04 8.4 22.65 3 16.02 3zm0 21.8c-1.37 0-2.7-.33-3.9-.96l-.28-.15-4.65.92.94-4.6-.18-.3a9.7 9.7 0 0 1-1.5-5.17c0-5.4 4.4-9.8 9.8-9.8 2.62 0 5.08 1.02 6.93 2.87a9.72 9.72 0 0 1 2.87 6.93c-.02 5.4-4.42 9.8-9.83 9.8zm5.4-7.32c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15s-.77.97-.94 1.17-.35.22-.65.07a8.03 8.03 0 0 1-2.36-1.46 8.8 8.8 0 0 1-1.63-2.03c-.17-.3 0-.46.13-.6.13-.14.3-.35.44-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.9-2.2-.24-.57-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.47 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.09 4.5.71.3 1.27.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.4.25-.7.25-1.3.17-1.4-.07-.13-.27-.2-.57-.35z"/></svg>
 </a>
+
 <script src="script.js" defer></script>
 </body>
 </html>
