@@ -16,10 +16,12 @@
 <body>
 
 <div class="grain"></div>
+<div class="page-wipe" id="pageWipe" aria-hidden="true"></div>
 
 <header id="site-header">
 <nav class="wrap">
 <a href="index.html" class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 2.8-1.3 4.5-2.8 6.4C7.6 10.6 6.2 12.6 6.2 15a5.8 5.8 0 0 0 11.6 0c0-1.9-.9-3.4-1.8-4.7.2 1.4-.4 2.3-1 2.8-.2-1.9-1.4-2.9-1.9-5.1-.3 1.4-1.4 1.9-1.9 3.3C10.6 8.9 12 5.3 12 2z"/></svg></span>Red Flame</a>
+<span class="status-badge header-status" data-status><span class="dot"></span><span class="status-text">Checking hours&hellip;</span></span>
 <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
 <ul id="navLinks">
 <li><a href="index.html">Home</a></li>
@@ -27,7 +29,7 @@
 <li><a href="about.html">About</a></li>
 <li><a href="reviews.html">Reviews</a></li>
 <li><a href="contact.html">Contact</a></li>
-<li class="nav-cta"><a href="https://wa.me/2348087090973?text=Hi%2C%20I%27d%20like%20to%20make%20a%20reservation" class="btn btn-primary" target="_blank" rel="noopener">Book a Table</a></li>
+<li class="nav-cta"><a href="https://wa.me/2348087090973?text=Hi%2C%20I%27d%20like%20to%20make%20a%20reservation" class="btn btn-primary" data-reserve target="_blank" rel="noopener">Book a Table</a></li>
 </ul>
 </nav>
 </header>
@@ -48,29 +50,33 @@
 <div class="menu-category reveal" style="margin-top:80px;">
 <div class="menu-category-head"><h2>Signature Dishes</h2><span class="rule"></span></div>
 <div class="cards">
-<article class="card">
+<article class="card" data-dish="{&quot;img&quot;: &quot;https://images.unsplash.com/photo-1610440042657-612c34d95e9f?auto=format&fit=crop&w=900&q=80&quot;, &quot;alt&quot;: &quot;Classic flame-grilled burger with melted cheese&quot;, &quot;name&quot;: &quot;Classic Flame Burger&quot;, &quot;price&quot;: &quot;4,500&quot;, &quot;desc&quot;: &quot;Char-grilled beef patty, aged cheddar, caramelised onions and house sauce, in a toasted brioche bun.&quot;, &quot;story&quot;: &quot;We grind the blend fresh each morning \u2014 a fattier cut than most burger joints use, because fat is what carries flavour over open flame. It sits on the grate just long enough to char at the edges before the cheese goes on to melt into every crack.&quot;}">
 <div class="card-media"><img class="fx-photo" src="https://images.unsplash.com/photo-1610440042657-612c34d95e9f?auto=format&fit=crop&w=900&q=80" width="900" height="1200" alt="Classic flame-grilled burger with melted cheese" loading="lazy" decoding="async"></div>
+<span class="card-view-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
 <div class="card-body">
 <div class="card-top"><h3>Classic Flame Burger</h3><span class="price-badge">&#8358;4,500</span></div>
 <p>Char-grilled beef patty, aged cheddar, caramelised onions and house sauce, in a toasted brioche bun.</p>
 </div>
 </article>
-<article class="card">
+<article class="card" data-dish="{&quot;img&quot;: &quot;https://images.unsplash.com/photo-1622880833523-7cf1c0bd4296?auto=format&fit=crop&w=900&q=80&quot;, &quot;alt&quot;: &quot;Pepperoni pizza baking in a wood-fired oven&quot;, &quot;name&quot;: &quot;Pepperoni Inferno Pizza&quot;, &quot;price&quot;: &quot;6,000&quot;, &quot;desc&quot;: &quot;Hand-stretched dough, slow-simmered tomato sauce, mozzarella and double pepperoni, wood-fired.&quot;, &quot;story&quot;: &quot;The dough proofs for 24 hours before it ever sees the oven. At 400\u00b0C the crust blisters in under two minutes \u2014 any longer and you lose the chew we're after, any less and it never gets that char.&quot;}">
 <div class="card-media"><img class="fx-photo" src="https://images.unsplash.com/photo-1622880833523-7cf1c0bd4296?auto=format&fit=crop&w=900&q=80" width="900" height="1200" alt="Pepperoni pizza baking in a wood-fired oven" loading="lazy" decoding="async"></div>
+<span class="card-view-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
 <div class="card-body">
 <div class="card-top"><h3>Pepperoni Inferno Pizza</h3><span class="price-badge">&#8358;6,000</span></div>
 <p>Hand-stretched dough, slow-simmered tomato sauce, mozzarella and double pepperoni, wood-fired.</p>
 </div>
 </article>
-<article class="card">
+<article class="card" data-dish="{&quot;img&quot;: &quot;https://images.unsplash.com/photo-1611270629569-8b357cb88da9?auto=format&fit=crop&w=900&q=80&quot;, &quot;alt&quot;: &quot;Italian pasta dish with fresh herbs&quot;, &quot;name&quot;: &quot;Smoky Italian Pasta&quot;, &quot;price&quot;: &quot;4,200&quot;, &quot;desc&quot;: &quot;Pasta tossed with a smoke-kissed tomato and herb sauce, finished with parmesan and basil.&quot;, &quot;story&quot;: &quot;The sauce starts the same way the grill does \u2014 over real heat, reduced slowly until the tomatoes themselves pick up a whisper of smoke. It's the one dish on the menu that never touches the flame directly, and still tastes like it did.&quot;}">
 <div class="card-media"><img class="fx-photo" src="https://images.unsplash.com/photo-1611270629569-8b357cb88da9?auto=format&fit=crop&w=900&q=80" width="900" height="1200" alt="Italian pasta dish with fresh herbs" loading="lazy" decoding="async"></div>
+<span class="card-view-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
 <div class="card-body">
 <div class="card-top"><h3>Smoky Italian Pasta</h3><span class="price-badge">&#8358;4,200</span></div>
 <p>Pasta tossed with a smoke-kissed tomato and herb sauce, finished with parmesan and basil.</p>
 </div>
 </article>
-<article class="card">
+<article class="card" data-dish="{&quot;img&quot;: &quot;https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?auto=format&fit=crop&w=900&q=80&quot;, &quot;alt&quot;: &quot;Grilled steak cooked over charcoal&quot;, &quot;name&quot;: &quot;Charcoal Grilled Steak&quot;, &quot;price&quot;: &quot;7,000&quot;, &quot;desc&quot;: &quot;Prime cut seared over live charcoal, rested and sliced, with roasted vegetables and red-wine jus.&quot;, &quot;story&quot;: &quot;Prime cuts rest at room temperature before they ever meet the coals, then get seared hot and fast to lock in the char without overcooking the centre. We rest it again after \u2014 patience is most of the recipe.&quot;}">
 <div class="card-media"><img class="fx-photo" src="https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?auto=format&fit=crop&w=900&q=80" width="900" height="1200" alt="Grilled steak cooked over charcoal" loading="lazy" decoding="async"></div>
+<span class="card-view-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
 <div class="card-body">
 <div class="card-top"><h3>Charcoal Grilled Steak</h3><span class="price-badge">&#8358;7,000</span></div>
 <p>Prime cut seared over live charcoal, rested and sliced, with roasted vegetables and red-wine jus.</p>
@@ -127,6 +133,46 @@
 <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.22.6 4.3 1.63 6.1L4 29l8.06-1.6a12.9 12.9 0 0 0 3.96.62c6.62 0 12.02-5.4 12.02-12.02C28.04 8.4 22.65 3 16.02 3zm0 21.8c-1.37 0-2.7-.33-3.9-.96l-.28-.15-4.65.92.94-4.6-.18-.3a9.7 9.7 0 0 1-1.5-5.17c0-5.4 4.4-9.8 9.8-9.8 2.62 0 5.08 1.02 6.93 2.87a9.72 9.72 0 0 1 2.87 6.93c-.02 5.4-4.42 9.8-9.83 9.8zm5.4-7.32c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15s-.77.97-.94 1.17-.35.22-.65.07a8.03 8.03 0 0 1-2.36-1.46 8.8 8.8 0 0 1-1.63-2.03c-.17-.3 0-.46.13-.6.13-.14.3-.35.44-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.9-2.2-.24-.57-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.47 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.09 4.5.71.3 1.27.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.4.25-.7.25-1.3.17-1.4-.07-.13-.27-.2-.57-.35z"/></svg>
 </a>
 
-<script src="script.js" defer></script>
+<dialog id="reservationModal" class="modal">
+<form class="modal-form" method="dialog">
+<button type="button" class="modal-close" aria-label="Close" onclick="document.getElementById('reservationModal').close()">&times;</button>
+<p class="eyebrow">Reserve a table</p>
+<h3>Book with Red Flame</h3>
+<div class="modal-grid">
+<label>Date<input type="date" id="resDate" required></label>
+<label>Time
+<select id="resTime" required>
+<option value="">Select</option>
+<option>11:00 AM</option><option>11:30 AM</option><option>12:00 PM</option><option>12:30 PM</option>
+<option>1:00 PM</option><option>1:30 PM</option><option>2:00 PM</option><option>2:30 PM</option>
+<option>6:00 PM</option><option>6:30 PM</option><option>7:00 PM</option><option>7:30 PM</option>
+<option>8:00 PM</option><option>8:30 PM</option><option>9:00 PM</option><option>9:30 PM</option>
+</select>
+</label>
+<label>Guests
+<select id="resGuests" required>
+<option value="">Select</option>
+<option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option>
+<option>5 guests</option><option>6 guests</option><option>7+ guests</option>
+</select>
+</label>
+<label>Name (optional)<input type="text" id="resName" placeholder="Your name"></label>
+</div>
+<p id="resError" hidden style="color:var(--flame-1);font-size:.85rem;margin-bottom:14px;">Please fill in date, time and party size.</p>
+<button type="button" id="resSubmit" class="btn btn-primary" style="width:100%;">Continue on WhatsApp</button>
+<p class="modal-note">We'll open WhatsApp with your details filled in &mdash; just hit send.</p>
+</form>
+</dialog>
+<dialog id="dishModal" class="modal dish-modal">
+<button type="button" class="modal-close" aria-label="Close" onclick="document.getElementById('dishModal').close()" style="z-index:3;">&times;</button>
+<img id="dishModalImg" class="dish-modal-img fx-photo" src="" alt="">
+<div class="dish-modal-body">
+<div class="card-top"><h3 id="dishModalName"></h3><span class="price-badge" id="dishModalPrice"></span></div>
+<p id="dishModalDesc"></p>
+<p class="dish-story" id="dishModalStory"></p>
+</div>
+</dialog>
+
+<script src="script.obf.js" defer></script>
 </body>
 </html>

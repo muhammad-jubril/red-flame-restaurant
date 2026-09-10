@@ -20,9 +20,9 @@
   --line:rgba(255,246,234,.12);
   --line-strong:rgba(255,246,234,.24);
 
-  --display:'Fraunces', 'Iowan Old Style', 'Georgia', serif;
-  --body:'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --label:'Space Grotesk', -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --display:'Fraunces', serif;
+  --body:'Inter', sans-serif;
+  --label:'Space Grotesk', sans-serif;
 
   --container:1220px;
   --ease:cubic-bezier(.16,.8,.24,1);
@@ -453,85 +453,3 @@ footer{border-top:1px solid var(--line);padding:64px 0 32px;position:relative;}
 @media(prefers-reduced-motion:reduce){
   *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;}
 }
-
-/* ==========================================================================
-   Page-wipe transition
-   ========================================================================== */
-.page-wipe{
-  position:fixed;inset:0;z-index:300;pointer-events:none;
-  background:var(--flame-grad);transform:scaleX(1);transform-origin:right;
-}
-.page-wipe.wipe-reveal{animation:wipeReveal .65s var(--ease-out) forwards;}
-.page-wipe.wipe-cover{transform-origin:left;transform:scaleX(0);animation:wipeCover .5s var(--ease-out) forwards;}
-@keyframes wipeReveal{to{transform:scaleX(0);}}
-@keyframes wipeCover{to{transform:scaleX(1);}}
-@media(prefers-reduced-motion:reduce){.page-wipe{display:none;}}
-
-/* ==========================================================================
-   Open / closed status badge
-   ========================================================================== */
-.status-badge{
-  display:inline-flex;align-items:center;gap:8px;font-family:var(--label);font-size:.76rem;
-  font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--paper-dim);
-}
-.status-badge .dot{width:8px;height:8px;border-radius:50%;background:#3ecf6a;flex-shrink:0;box-shadow:0 0 0 3px rgba(62,207,106,.2);}
-.status-badge.closed .dot{background:#ff5b4d;box-shadow:0 0 0 3px rgba(255,91,77,.2);}
-.status-badge.closed{color:var(--paper-faint);}
-.header-status{display:none;}
-@media(min-width:1040px){.header-status{display:inline-flex;margin-right:8px;}}
-
-/* ==========================================================================
-   Modals (reservation + dish detail)
-   ========================================================================== */
-dialog.modal{
-  border:none;border-radius:26px;padding:0;background:var(--ink-2);color:var(--paper);
-  max-width:480px;width:calc(100% - 40px);box-shadow:0 40px 90px -30px rgba(0,0,0,.8);
-}
-dialog.modal::backdrop{background:rgba(10,7,5,.75);backdrop-filter:blur(6px);}
-dialog.modal[open]{animation:modalIn .35s var(--ease-out) forwards;}
-@keyframes modalIn{from{opacity:0;transform:translateY(16px) scale(.97);}to{opacity:1;transform:translateY(0) scale(1);}}
-@media(prefers-reduced-motion:reduce){dialog.modal[open]{animation:none;}}
-
-.modal-form{padding:40px 34px 34px;position:relative;}
-.modal-close{
-  position:absolute;top:18px;right:18px;width:36px;height:36px;border-radius:50%;
-  background:var(--ink-3);border:1px solid var(--line);color:var(--paper-dim);
-  font-size:1.3rem;line-height:1;display:flex;align-items:center;justify-content:center;
-  cursor:pointer;transition:color .2s ease, border-color .2s ease;
-}
-.modal-close:hover{color:var(--flame-2);border-color:var(--flame-2);}
-.modal-form h3{font-size:1.7rem;margin:6px 0 22px;}
-.modal-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:22px;}
-.modal-grid label{display:flex;flex-direction:column;gap:8px;font-family:var(--label);font-size:.72rem;
-  text-transform:uppercase;letter-spacing:.06em;color:var(--paper-faint);font-weight:600;}
-.modal-grid label.full{grid-column:1 / -1;}
-.modal-grid input, .modal-grid select{
-  background:var(--ink);border:1px solid var(--line-strong);border-radius:10px;padding:12px 14px;
-  color:var(--paper);font-family:var(--body);font-size:.95rem;text-transform:none;letter-spacing:0;
-  color-scheme:dark;
-}
-.modal-grid input:focus, .modal-grid select:focus{outline:none;border-color:var(--flame-2);}
-.modal-note{font-size:.8rem;color:var(--paper-faint);margin-top:14px;text-align:center;}
-
-.dish-modal{max-width:640px;padding:0;overflow:hidden;}
-.dish-modal-img{width:100%;aspect-ratio:16/10;object-fit:cover;}
-.dish-modal-body{padding:30px 34px 36px;position:relative;}
-.dish-modal-body .card-top{margin-bottom:14px;}
-.dish-modal-body .card-top h3{font-size:1.8rem;}
-.dish-modal-body > p{color:var(--paper-dim);margin-bottom:16px;}
-.dish-story{
-  font-family:var(--display);font-style:italic;font-size:1.05rem;color:var(--paper);
-  border-left:2px solid var(--flame-2);padding-left:18px;line-height:1.6;
-}
-@media(max-width:600px){.modal-grid{grid-template-columns:1fr;}}
-
-/* clickable menu cards */
-.card{cursor:pointer;}
-.card:focus-visible{outline:2px solid var(--flame-2);outline-offset:4px;}
-.card-view-hint{
-  position:absolute;top:20px;right:20px;z-index:2;width:36px;height:36px;border-radius:50%;
-  background:rgba(10,7,5,.6);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;
-  color:var(--paper);opacity:0;transform:scale(.8);transition:opacity .3s ease, transform .3s ease;
-}
-.card:hover .card-view-hint, .card:focus-visible .card-view-hint{opacity:1;transform:scale(1);}
-.card-view-hint svg{width:16px;height:16px;}
